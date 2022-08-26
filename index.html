@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <style>
+        html {
+            background: url(./bus_stop_re_h8ej.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+
+        body {
+            color: black;
+            text-align: center;
+            box-sizing: border-box;
+            font-weight: 700;
+        }
+
+        button {
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px auto;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3;
+        }
+
+        button:active {
+            opacity: 0.5;
+            transition: 0.6;
+        }
+
+        #increment-btn {
+            background-color: red;
+        }
+
+        #save-btn {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>People entered:</h1>
+    <h2 id="counter-el">0</h2>
+
+    <button type="button" id="increment-btn" onclick="increment()">INCREMENT</button>
+    <button type="button" id="save-btn" onclick="save()">SAVE</button>
+    <p id="save-el">Previous entries: </p>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
